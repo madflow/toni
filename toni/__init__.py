@@ -1,1 +1,2 @@
-# You are l0st
+def main():
+    print 'Implement me or something'
