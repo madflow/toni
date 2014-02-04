@@ -1,0 +1,21 @@
+{
+  "name": "boom",
+  "version": "0.0.1",
+  "authors": [
+    "madflow"
+  ],
+  "description": "Your personal static website generator",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "static/vendors",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.0.3"
+  }
+}
