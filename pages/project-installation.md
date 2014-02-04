@@ -9,7 +9,7 @@ order: -2
 
 ```
 mkvirtualenv toni
-pip install https://github.com/madflow/toni
+pip install -e git://github.com/madflow/toni#egg=toni
 toni init my-site
 cd my-site
 toni serve
