@@ -1,0 +1,7 @@
+{% for page in pages %}
+    {% if page.meta.published == 1 %}
+        {% if page.meta.frontpage == 1 %}
+            {{ page.html|safe }}
+        {% endif %}
+    {% endif %}
+{% endfor %}
