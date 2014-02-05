@@ -29,6 +29,7 @@ setup(name='toni',
         'Flask',
         'Frozen-Flask',
         'Flask-FlatPages',
+        'Pygments',
       ],
       entry_points={
           'console_scripts': [
