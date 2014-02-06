@@ -1,5 +1,5 @@
 {
-  "name": "boom",
+  "name": "toni",
   "version": "0.0.1",
   "authors": [
     "madflow"
@@ -11,8 +11,8 @@
     "**/.*",
     "node_modules",
     "bower_components",
-    "static/vendors",
-    "test",
+    "vendors",
+    "Test",
     "tests"
   ],
   "dependencies": {
