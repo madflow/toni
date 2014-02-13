@@ -33,7 +33,7 @@ setup(name='toni',
       ],
       entry_points={
           'console_scripts': [
-              'toni = toni:main',
+              'toni = toni.cli:main',
           ],
       }
       )
