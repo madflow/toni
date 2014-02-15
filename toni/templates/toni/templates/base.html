@@ -5,13 +5,13 @@
     <title>Hi. I am Toni.</title>
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="{{ url_for('static', filename='vendors/bootstrap/dist/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='vendors/bootstrap/dist/css/bootstrap.min.css', _external=True) }}">
     
     <!-- Pygments -->
-    <link rel="stylesheet" href="{{ url_for('pygments_css') }}">
+    <link rel="stylesheet" href="{{ url_for('pygments_css', _external=True) }}">
 
     <!-- Custom styles -->
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css', _external=True) }}">
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -28,7 +28,7 @@
 
     {% endblock content %}
     </div>
-    <script src="{{ url_for('static', filename='vendors/jquery/jquery.min.js') }}"></script>
-    <script src="{{ url_for('static', filename='vendors/bootstrap/dist/js/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='vendors/jquery/jquery.min.js', _external=True) }}"></script>
+    <script src="{{ url_for('static', filename='vendors/bootstrap/dist/js/bootstrap.min.js', _external=True) }}"></script>
 </body>
 </html>

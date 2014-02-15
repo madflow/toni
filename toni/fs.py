@@ -26,4 +26,5 @@ def create_temp_dir():
     return mkdtemp()
 
 def delete_dir(path):
+    ''' Delete a directory'''
     return shutil.rmtree(path)

@@ -2,6 +2,11 @@
     {% if page.meta.published == 1 %}
         {% if page.meta.frontpage == 1 %}
             {{ page.html|safe }}
+            {% for tag in page.meta.tags %}
+                <a href="{{ url_for("tag", tag=tag) }}" class="badge">
+                    {{ tag }}
+                </a>
+            {% endfor %} 
         {% endif %}
     {% endif %}
 {% endfor %}

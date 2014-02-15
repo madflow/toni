@@ -1,6 +1,6 @@
-<ul>
+<ul class="list-group">
 {% for page in pages %}
-    <li>
+    <li class="list-group-item">
         {% if page.meta.published == 1 %}
         <a href="{{ url_for("page", path=page.path) }}">{{ page.title }}</a>
         {% endif %}
@@ -12,6 +12,6 @@
     {% endif %}
     </li>
 {% else %}
-    <li>No page.</li>
+    <li class="list-group-item">No page.</li>
 {% endfor %}
 </ul>
