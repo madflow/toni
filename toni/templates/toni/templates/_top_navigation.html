@@ -1,23 +1,32 @@
-<header role="banner" class="navbar navbar-inverse navbar-fixed-top bs-docs-nav">
+<nav class="navbar navbar-default navbar-static-top" role="navigation">
   <div class="container">
+
     <div class="navbar-header">
-      <button data-target=".bs-navbar-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="{{ url_for("index") }}">Toni - At your command</a>
+        <a class="navbar-brand" href="{{ url_for("index") }}">Toni - At your command</a>
     </div>
-    <nav role="navigation" class="collapse navbar-collapse bs-navbar-collapse nav navbar-nav">
-{% for page in pages %}
-{% if page.meta.published == 1 %}
-    <li>
-        <a href="{{ url_for("page", path=page.path) }}">{{ page.title }}</a>
-    </li>
-    {% endif %}
-{% endfor %}
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            {% for page in pages %}
+            {% if page.meta.published == 1 %}
+                <li>
+                    <a href="{{ url_for("page", path=page.path) }}">{{ page.title }}</a>
+                </li>
+                {% endif %}
+            {% endfor %}
+          </ul>
+        </li>
       </ul>
-    </nav>
-  </div>
-</header>
+    </div><!-- /.navbar-collapse -->
+
+  </div><!-- /.container-fluid -->
+</nav>

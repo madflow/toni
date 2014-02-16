@@ -36,7 +36,7 @@ def process_serve(args):
 
 
 def process_preview(args):
-    args.base = False
+    args.base = 'http://localhost:' + str(args.port)
     args.dir = create_temp_dir()
     app.config['FREEZER_DESTINATION'] = args.dir
     process_build(args)
